@@ -89,6 +89,18 @@ p "Eriks lottery number with 7 = #{users["Erik"][:lottery_numbers]}"
 
 # 8. Change Erik's hometown to Edinburgh
 
+users["Erik"][:home_town] = "Edinburgh"
+
+p "Eriks new home town  = #{users["Erik"][:home_town]}"
+
+
 # 9. Add a pet dog to Erik called "Fluffy"
 
+users["Erik"][:pets].push({:name => "Fluffy", :species => "dog"})
+
+p "Eriks Pets = #{users["Erik"][:pets]}"
+
+
 # 10. Add another person to the users hash
+users["John Doe"] = nil
+p "New User Keys  = #{users.keys}"
