@@ -68,7 +68,6 @@ p "Eriks lottery number = #{users["Erik"][:lottery_numbers]}"
 p "Avrils species #{users["Avril"][:pets][0][:species]}"
 
 # 5. Get the smallest of Erik's lottery numbers
- "Eriks lowest number = #{}"
 
 p "Eriks lowest number = #{users["Erik"][:lottery_numbers].min()}"
 
