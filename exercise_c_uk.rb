@@ -20,12 +20,16 @@ p "  = #{}"
 
 # 1. Change the capital of Wales from `"Swansea"` to `"Cardiff"`.
 
-# for country in united_kingdom
-#   if (country[:name] == "Wales")
 united_kingdom.find{|h| h[:name] == "Wales"}[:capital] = "Cardiff"
 
-p " Wales Capital = #{united_kingdom.find{|h| h[:name] == "Wales"}[:capital]}"
 
+# for country in united_kingdom
+#   if country[:name] == "Wales"
+#     country[:capital] = "Cardiff"
+#   end
+# end
+
+p " Wales Capital = #{united_kingdom.find{|h| h[:name] == "Wales"}[:capital]}"
 # 2. Create a Hash for Northern Ireland and add it to the `united_kingdom` array (The capital is Belfast, and the population is 1,811,000).
 
 united_kingdom.push({
